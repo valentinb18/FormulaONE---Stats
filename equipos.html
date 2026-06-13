@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos - FormulaONE Stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg" id="navbar-principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FormulaONE Stats</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pilotos.html">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="circuitos.html">Circuitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historicos.html">Historicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="inicio-equipos">
+        <div class="container text-center py-5">
+            <h1 class="fw-bold display-3">EQUIPOS DE LA FORMULA 1</h1>
+            <p class="fs-5">DATOS DE LOS CONSTRUCTORES DEL CAMPEONATO ACTUAL DE FORMULA 1.</p>
+        </div>
+    </section>
+
+    <section id="busqueda-equipos">
+        <div class="container py-4">
+            <input type="text" id="inputBuscarEquipo" class="form-control" placeholder="Buscar equipo...">
+        </div>
+    </section>
+
+    <section id="equipos-listado">
+        <div class="container py-4">
+            <div class="row" id="contenedorEquipos">
+            </div>
+        </div>
+    </section>
+
+    <section id="stats-equipos" class="py-4">
+        <div class="container text-center py-4">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-left">
+                    <h2 class="fw-bold display-3">16</h2>
+                    <p class="fs-5">🏆 Ferrari</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <h2 class="fw-bold display-3">10</h2>
+                    <p class="fs-5">🏆 McLarem</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <h2 class="fw-bold display-3">9</h2>
+                    <p class="fs-5">🏆 Williams</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <h2 class="fw-bold display-3">8</h2>
+                    <p class="fs-5">🏆 Mercedes</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <h2 class="fw-bold display-3">7</h2>
+                    <p class="fs-5">🏆 Lotus</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <h2 class="fw-bold display-3">6</h2>
+                    <p class="fs-5">🏆 Red Bull</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container text-center py-4">
+            <p class="mb-2">FormulaONE Stats - Todo sobre la Formula 1.</p>
+            <div id="redes" class="mb-2">
+                <a href="https://twitter.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    Twitter
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="https://twitch.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="fa-brands fa-twitch"></i>
+                    Twitch
+                </a>
+            </div>
+            <p>2026 FormulaONE Stats. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/equipos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
